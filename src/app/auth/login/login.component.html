@@ -1,0 +1,22 @@
+<section class="login-display">
+  <div class="login-box">
+    <form [formGroup]="form" (submit)="onSubmit()">
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email" placeholder="Digite seu email">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password" placeholder="Digite sua senha">
+      </div>
+
+      <button
+        class="btn btn-primary btn-full-width"
+        type="submit"
+        [disabled]="form.invalid"
+        >
+        Acessar o sistema
+      </button>
+    </form>
+  </div>
+</section>

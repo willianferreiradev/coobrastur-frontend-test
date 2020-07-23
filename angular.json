@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "coobrastur-frontend-test"
+    }
+  },
+  "defaultProject": "coobrastur-frontend-test",
+  "cli": {
+    "analytics": false
+  }
 }

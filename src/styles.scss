@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'scss/reset.scss';
+@import 'scss/variables.scss';
+@import 'scss/buttons.scss';
+@import 'scss/forms.scss';
+@import 'scss/helpers.scss';
+@import 'toastr/build/toastr.min.css';
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  .container, .container-navbar {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .containerr-navbar {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-navbar {
+    width: 1170px;
+  }
+}
